@@ -63,7 +63,8 @@ namespace P5
             {
                 return MODIFIED_PROJECT_ID_ERROR;
             }
-            if (IsDupliclateName(project.Name)) {
+            if (IsDupliclateName(project.Name))
+            {
                 return DUPLICATE_PROJECT_NAME_ERROR;
             }
             if (project.Name.Trim() == "")
@@ -85,7 +86,7 @@ namespace P5
         private int GetNextId()
         {
             int currentMaxId = 0;
-            foreach( Project p in _Projects)
+            foreach (Project p in _Projects)
             {
                 currentMaxId = p.Id;
             }

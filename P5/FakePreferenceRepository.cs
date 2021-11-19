@@ -7,7 +7,7 @@ namespace P5
         public const string PREFERENCE_PROJECT_ID = "Project_Id";
         public const string PREFERENCE_PROJECT_NAME = "Project_Name";
         private const string NO_ERROR = "";
-        private static Dictionary<string, Dictionary<string,string>> _Preferences = new Dictionary<string, Dictionary<string,string>>();
+        private static Dictionary<string, Dictionary<string, string>> _Preferences = new Dictionary<string, Dictionary<string, string>>();
 
         public string GetPreference(string UserName, string PreferenceName)
         {
@@ -43,10 +43,10 @@ namespace P5
             {
                 // no preference yet for this user
                 // Add user and preference
-                NameValuePair = new Dictionary<string, string>(); 
+                NameValuePair = new Dictionary<string, string>();
                 NameValuePair.Add(PreferenceName, Value);
                 _Preferences.Add(UserName, NameValuePair);
-            }            
+            }
             return NO_ERROR;
         }
     }
